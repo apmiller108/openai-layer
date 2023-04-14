@@ -1,14 +1,21 @@
+This provides a spacemacs layer for [openai](https://github.com/emacs-openai/openai "openai") and [codegpt](https://github.com/emacs-openai/codegpt "codegpt") packages.
+
 # Usage
 ## Installation
 1. Clone the repo
 2. Add the location where it was cloned to `dotspacemacs-configuration-layer-path`
+
+```elisp
+(setq-default dotspacemacs-configuration-layer-path '("/path/to/dir/where/this/was/cloned"))
+
+```
 ## Setup
 ### Set the API Key
 ```elisp
 (setq openai-key "OPENAI_API_KEY")
 ```
 ### Set user (optional)
-You might need this for somethings
+You might need this for some things
 ```elisp
 (setq openai-user "[YOUR USER UID]")
 ```
