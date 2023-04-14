@@ -1,5 +1,11 @@
 (defconst openai-layer-packages
-  (codegpt :location (recipe :fetcher github :repo "emacs-openai/codegpt")))
+  '(
+    (openai :location (recipe :fetcher github :repo "emacs-openai/openai"))
+    (codegpt :location (recipe :fetcher github :repo "emacs-openai/codegpt"))
+    ))
+
+(defun openai-layer/init-openai ()
+  (use-package openai :ensure t))
 
 (defun openai-layer/init-codegpt ()
   (use-package codegpt
