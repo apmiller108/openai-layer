@@ -9,6 +9,10 @@ This provides a spacemacs layer for [openai](https://github.com/emacs-openai/ope
 (setq-default dotspacemacs-configuration-layer-path '("/path/to/dir/where/this/was/cloned"))
 
 ```
+3. Add to `dotspacemacs-configuration-layers`
+```elisp
+(setq-default dotspacemacs-configuration-layers '(openai-layer))
+```
 ## Setup
 ### Set the API Key
 ```elisp
