@@ -11,8 +11,8 @@
   (use-package codegpt
     :ensure t
     :config
-    (setq codegpt-tunnel 'completion            ; The default is 'completion. Can set to 'chat.
-          codegpt-model "text-davinci-003"      ; Completion or chat modekl
-          codegpt-max-tokens 500                ; Default is 2000
-          codegpt-temperature 0.2)              ; Number between 0 and 2. Higher the value to more radomization.
+    (setq codegpt-tunnel openai-layer-codegpt-tunnel
+          codegpt-model openai-layer-codegpt-model
+          codegpt-max-tokens openai-layer-codegpt-max-tokens
+          codegpt-temperature openai-layer-codegpt-temperature)
     ))
