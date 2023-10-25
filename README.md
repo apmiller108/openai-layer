@@ -23,6 +23,10 @@ You might need this for some things
 ```elisp
 (setq openai-user "[YOUR USER UID]")
 ```
+
+## Usage
+Same usage instructions as [codegpt](https://github.com/emacs-openai/codegpt#-usage) package
+
 ## Customization
 - `codegpt-tunnel` : API you want to use (`completion` or `chat`). completion
   means text completion, chat means chat completion. Default is completion.
